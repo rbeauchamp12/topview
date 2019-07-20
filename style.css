@@ -1,0 +1,269 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#logo {
+    width: 40%;
+    position: relative;
+    left: 9rem;
+    top: 0;
+}
+
+.navbar-nav {
+    display: inline-block;
+    position: relative;
+    left: 33rem;
+
+}
+
+.nav-link {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292e6b;
+}
+
+
+
+/*hero section */
+#hero-section {
+    padding-top: 5rem;
+}
+
+.hero {
+    padding-top: 15rem;
+    width: 100%;
+    height: 800px;
+    background: url(./img/header_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .85;
+}
+
+
+#hero-msg {
+    color: #de2129;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    padding-top: 5rem;
+    text-transform: capitalize;
+}
+
+#hero-sub {
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+
+.card-container {
+    top: 8rem;
+    left: 1rem;
+    position: relative;
+}
+
+.card {
+    width: 20rem;
+    margin-top: 6rem;
+    position: absolute;
+}
+
+.card-body {
+    background-color: #de2129;
+}
+
+.card-title {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-text {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.selection-box {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    max-width: 140px;
+    height: 35px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    left: 4.5rem;
+    margin-bottom: 20px;
+    top: 0;
+}
+
+
+/*
+.selection-circle {
+    color: white;
+    background-color: #292e6b;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 999;
+
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    font-family: Arial;
+} */
+/*
+.minus {
+    left: 13px;
+    float: left;
+    position: relative;
+    width: 10px;
+}
+
+.plus {
+    right: 25px;
+    float: right;
+    position: relative;
+    width: 10px;
+
+}
+*/
+
+.symbol {
+    position: relative;
+    top: 3px;
+    width: 24px;
+}
+
+
+.number {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    color: #292e6b;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+
+input.plus {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #de2129;
+    background: white;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+input.minus {
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid #de2129;
+    background: white;
+    border-radius: 25px;
+}
+
+
+
+
+.btn,
+.btn-primary {
+    border-radius: 25px !important;
+    padding: 10px 25px !important;
+    position: relative;
+    left: 7px;
+    top: 0;
+
+}
+
+
+
+
+
+.footer {
+    background-color: #292e6b;
+    height: 300px;
+    margin-top: 20rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        left: 0;
+        top: 1rem;
+        margin-left: 1rem;
+        position: absolute;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+        position: relative;
+        left: 0;
+    }
+
+    #hero-msg {
+        top: 0;
+        font-size: 25px;
+        margin-left: 5px;
+    }
+
+    #hero-sub {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .card-container {
+        top: 5rem;
+        left: .75rem;
+        position: relative;
+    }
+
+    .card {
+        width: 18rem;
+        margin-top: 20px;
+
+    }
+
+    .selection-box {
+        left: 3.5rem;
+    }
+
+
+}

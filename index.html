@@ -10,35 +10,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--fav icon-->
-    <link rel="shortcut icon" type="image/png" href="../img/topview_logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./img/topview_logo.png" />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
     <!-- //////////  navbar section begins //////////  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="./img/topview_color.png" id="logo" alt="">
+            </a>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">BUS</a>
+                    <a class="nav-item nav-link" href="#">CRUISE</a>
+                    <a class="nav-item nav-link active" href="#">BICYCLE</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- //////////  navbar section ends //////////  -->
 
     <!-- //////////  header section begins //////////  -->
+
+    <main>
+        <section id="hero-section">
+            <div class="container">
+                <div class="hero">
+                    <p class="display-4 text-center" id="hero-msg">Welcome to Top View</p>
+                    <p class="lead text-center" id="hero-sub">Start your bike tour now</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="container card-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Adult%20Male%20Bike" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adult Male Bike</h5>
+                                <p class="card-text">Price: $20.50</p>
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+                                    </div>
+                                </div>
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Adult%20Female%20Bike"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adult Female Bike</h5>
+                                <p class="card-text">Price: $20.50</p>
+
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+                                    </div>
+                                </div>
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Kids%20Unisex%20Bike" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kids Unisex Bike</h5>
+                                <p class="card-text">Price: $12.75</p>
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+                                    </div>
+                                </div>
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Adult%20Unisex%20Helmet"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adult Unisex Helmet</h5>
+                                <p class="card-text">Price: $4.00</p>
+
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+                                    </div>
+                                </div>
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Kids%20Unisex%20Helmet"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kids Unisex Helmet</h5>
+                                <p class="card-text">Price: $3.50</p>
+
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+                                    </div>
+                                </div>
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="http://via.placeholder.com/250x250?text=Insurance" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Insurance</h5>
+                                <p class="card-text">Price: $9.99</p>
+
+                                <div class="selection-box">
+                                    <div class="selection-circle">
+
+                                        <input type='button' value='-' id="minus" class='minus'>
+
+                                        <input type='text' name='noOfBikes' value='0' class='number' id="noOfBikes">
+
+                                        <input type='button' value='+' id="plus" class='plus'>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="text-center button">
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-2-->
+            </div>
+            <!--end of container-->
+        </section>
+
+        <section class="footer">
+
+        </section>
+    </main>
+
+
 
     <!-- //////////  header section ends //////////  -->
 
@@ -53,9 +256,7 @@
 
 
 
-
-
-
+    <script src="./index.js"></script>
 
 
     <!-- Optional JavaScript -->
